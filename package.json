@@ -8,7 +8,7 @@
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": " https://dorsaffrigui.github.io/finastra.design/",
+  "homepage": " https://fusionfabric.github.io/finastra.design/",
   "devDependencies": {
     "@babel/core": "^7.12.1",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
