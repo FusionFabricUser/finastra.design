@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
+  "description": "Presentation of the UX & Design team at Finastra.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fusionfabric/finastra.design.git"
+  },
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",

@@ -36,7 +36,7 @@ module.exports = {
     // Generates an HTML file from a template
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     new HtmlWebpackPlugin({
-      title: 'finastra design',
+      title: 'finastra.design',
       template: paths.src + '/home-page.html', // template file
       filename: 'index.html', // output file
     }),
