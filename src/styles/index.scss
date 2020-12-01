@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: skyblue;
+  position: fixed;
+  height: 60%;
+  width: 100%;
+
+  .logo {
+    font: 700 32px/38px Arial;
+    letter-spacing: normal;
+    margin: 0 0 16px;
+    color: white;
+  }
+
+  .title {
+    margin-top: 80px;
+    margin-left: 80px;
+
+    .first-container {
+      width: 200px;
+      height: 65px;
+      position: relative;
+      margin-left: 20px;
+      margin-top: 6px;
+
+      .first-box {
+        width: 395px;
+        height: 80px;
+        position: absolute;
+        background: white;
+
+        .typo-style {
+          margin-top: 6px;
+          margin-left: 8px;
+
+          span {
+            font: 700 72px/60px Futura EF, Futura;
+            letter-spacing: normal;
+            margin: 0 0 16px;
+            color: white;
+          }
+        }
+      }
+
+      .first-stack-top {
+        z-index: 9;
+        margin-left: -8px;
+      }
+    }
+
+    .second-container {
+      width: 200px;
+      position: relative;
+      margin: 20px;
+    }
+
+    .second-box {
+      width: 690px;
+      height: 100px;
+      position: absolute;
+
+      .typo-style {
+        font: 700 72px/60px Futura EF, Futura;
+        letter-spacing: normal;
+        margin: 16px 0 16px;
+        color: white;
+        margin-left: 8px;
+      }
+    }
+
+    .second-stack-top {
+      z-index: 9;
+      margin-top: -8px;
+      margin-left: -8px;
+    }
+  }
+
+  .header-picture {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 50px;
+
+    img {
+      width: 40%;
+    }
+  }
+}
