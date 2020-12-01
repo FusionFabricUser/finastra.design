@@ -7,71 +7,43 @@ body {
   position: fixed;
   height: 60%;
   width: 100%;
-
-  .first-title {
-    padding-left: 32px;
-    span {
-      font: 700 72px/60px Futura;
-      letter-spacing: normal;
-      background-color: black;
-      color: white;
-      position: relative;
-      width: fit-content;
-    }
-
-    span::after {
-      content: "";
-      background-color: white;
-      color: white;
-      position: absolute;
-      bottom: 0px;
-      left: 8px;
-      width: 100%;
-      height: 72px;
-      z-index: -1;
-    }
-  }
-
-  .second-title {
-    margin-top: 19px;
-    padding-left: 32px;
-    span {
-      font: 700 72px/60px Futura;
-      letter-spacing: normal;
-      background-color: black;
-      color: white;
-      position: relative;
-      width: fit-content;
-    }
-
-    span::after {
-      content: "";
-      background-color: white;
-      color: white;
-      position: absolute;
-      bottom: -8px;
-      left: 8px;
-      width: 100%;
-      height: 80px;
-      z-index: -1;
-    }
-  }
+  font: 700 60px/60px Futura;
+  color: white;
 
   .logo {
-    font: 700 32px/38px Arial;
+    font-size: 30px;
     letter-spacing: normal;
     margin: 0 0 16px;
     color: white;
   }
 
-  .header-picture {
-    position: relative;
+  .title {
     display: flex;
-    flex-direction: row-reverse;
-    margin-right: 50px;
+    flex-direction: column;
+    align-items: flex-start;
 
-    img {
-      width: 40%;
+    .title-line {
+      display: inline-block;
+      background-color: black;
+      padding: 8px;
+      position: relative;
+
+      .title-emphasis {
+        color: fuchsia;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: white;
+        bottom: -8px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
     }
+    
   }
+  
 }
