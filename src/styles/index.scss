@@ -19,9 +19,24 @@ body {
   }
 
   .title {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 100px;
+    margin-left: 100px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: url(/src/images/yellow-cursor.svg) no-repeat;
+      top: -90px;
+      left: -85px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+    }
 
     .title-line {
       display: inline-block;
@@ -44,7 +59,5 @@ body {
         z-index: -1;
       }
     }
-    
   }
-  
 }
