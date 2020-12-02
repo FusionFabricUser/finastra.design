@@ -3,7 +3,8 @@ body {
 }
 
 .header {
-  background-color: skyblue;
+  background: center center / 100% 100% no-repeat url('../images/header_bg.svg')  ;
+
   position: fixed;
   height: 60%;
   width: 100%;
