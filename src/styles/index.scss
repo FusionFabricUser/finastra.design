@@ -4,12 +4,12 @@ body {
 
 .header {
   background: center center / 100% 100% no-repeat url('../images/header_bg.svg')  ;
-
-  position: fixed;
-  height: 60%;
-  width: 100%;
-  font: 700 60px/60px Futura;
+  font: 700 60px Futura;
   color: white;
+  position: fixed;
+  height: 80%;
+  width: 100%;
+  padding: 24px;
 
   .logo {
     font-size: 30px;
@@ -19,6 +19,10 @@ body {
   }
 
   .title {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    font-size: clamp(2rem, 5vw, 4rem);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -30,7 +34,7 @@ body {
       position: relative;
 
       .title-emphasis {
-        color: fuchsia;
+        color: #f32393;
       }
 
       &::after {
