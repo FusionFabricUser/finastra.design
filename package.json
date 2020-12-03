@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js --watch",
     "deploy": "gh-pages -d dist"
   },
   "homepage": " https://fusionfabric.github.io/finastra.design/",
