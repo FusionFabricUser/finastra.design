@@ -1,13 +1,13 @@
 body {
   margin: 0;
+  background: white;
 }
 
 .header {
-  background: center center / 100% 100% no-repeat url('../images/header_bg.svg');
+  background: center center / 100% 100% no-repeat url("../images/header_bg.svg");
   font: 700 60px Futura;
   color: white;
   height: 80%;
-  width: 100%;
   padding: 24px;
 
   .logo {
@@ -21,17 +21,18 @@ body {
     position: absolute;
     top: 52%;
     left: 20%;
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(1.5rem, 5vw, 4rem);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     z-index: 0;
+    white-space: nowrap;
 
     &::before {
       content: "";
       position: absolute;
       display: block;
-      background: url('../images/icon-yellow-header.svg') no-repeat;
+      background: url("../images/icon-yellow-header.svg") no-repeat;
       top: -75px;
       left: -80px;
       z-index: -1;
@@ -68,40 +69,76 @@ body {
     height: 80%;
     left: 20%;
 
-    .img1, .img2, .img3 {
+    .img1,
+    .img2,
+    .img3 {
       position: absolute;
-      height:auto;
+      height: auto;
     }
 
     .img1 {
-      max-width:80%;
+      max-width: 80%;
       right: 32%;
-      top:10%;
+      top: 10%;
     }
 
     .img2 {
-      max-width:50%;
+      max-width: 50%;
       right: 10%;
     }
 
     .img3 {
-      max-width:50%;
+      max-width: 50%;
       right: 3%;
       top: 53%;
     }
-
   }
 }
 
-/*Mobile and tablet styles*/
-@media only screen and (max-width: 1024px){
+/*Mobile styles*/
+@media (min-width: 200px) and (max-width: 415px) {
+  
   .header {
     .title {
+      left: 7%;
+      top: 16%;
+
       &::before {
-        top: -65px;
-        left: -65px;
-        
+        top: -21px;
+        width: 10%;
+        left: -22px;
       }
+    }
+
+    .team-images {
+      top: 30%;
+      width: 86%;
+      height: 35%;
+      left: 14%;
+
+      .img3 {
+        top: 68%;
+      }
+    }
+  }
+}
+
+/*Tablet styles*/
+@media (min-width: 500px) and (max-width: 1024px) {
+  .header {
+    .title {
+      left: 10%;
+      top: 16%;
+      &::before {
+        top: -40px;
+        left: -40px;
+      }
+    }
+    .team-images {
+      top: 30%;
+      width: 65%;
+      height: 41%;
+      left: 20%;
     }
   }
 }
