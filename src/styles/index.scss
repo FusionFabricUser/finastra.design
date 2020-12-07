@@ -33,8 +33,8 @@ body {
       position: absolute;
       display: block;
       background: url("../images/icon-yellow-header.svg") no-repeat;
-      top: -75px;
-      left: -80px;
+      top: -42%;
+      left: -12%;
       z-index: -1;
       width: 100%;
       height: 45%;
@@ -68,7 +68,7 @@ body {
     width: 60%;
     height: 80%;
     left: 20%;
-
+ 
     .img1,
     .img2,
     .img3 {
@@ -96,7 +96,7 @@ body {
 }
 
 /*Mobile styles*/
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 690px) {
   
   .header {
     .title {
@@ -104,9 +104,9 @@ body {
       top: 16%;
 
       &::before {
-        top: -21px;
-        width: 10%;
-        left: -22px;
+        width: 13%;
+        top: -36%;
+        left: -12%;
       }
     }
 
@@ -124,14 +124,14 @@ body {
 }
 
 /*Tablet styles*/
-@media (min-width: 500px) and (max-width: 1024px) {
+@media (min-width: 700px) and (max-width: 1024px) {
   .header {
     .title {
       left: 10%;
       top: 16%;
       &::before {
-        top: -40px;
-        left: -40px;
+        top: -43%;
+        left: -13%;
       }
     }
     .team-images {
