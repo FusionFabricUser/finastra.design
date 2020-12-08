@@ -46,8 +46,50 @@ body {
       padding: 8px;
       position: relative;
 
-      .title-emphasis {
-        color: #f32393;
+      .text-animation {
+        display: inline-flex;
+        height: 1.2em;
+        overflow: hidden;
+
+        .title-emphasis {
+          position: relative;
+          padding: 0;
+          margin:0;
+          color: #f32393;
+          animation: animate 5s linear infinite;
+        }
+      }
+
+      @keyframes animate {
+        0% {
+          transform: translateY(0em);
+        }
+
+        30% {
+          transform: translateY(0em);
+        }
+
+        40% {
+          transform: translateY(-1.05em);
+        }
+
+        65% {
+          transform: translateY(-1.05em);
+        }
+
+        75%,
+        90% {
+          transform: translateY(-2.10em);
+        }
+
+        75%,
+        90% {
+          transform: translateY(-2.10em);
+        }
+
+        100% {
+          transform: translateY(-3.15em);
+        }
       }
 
       &::after {
@@ -68,7 +110,7 @@ body {
     width: 60%;
     height: 80%;
     left: 20%;
- 
+
     .img1,
     .img2,
     .img3 {
@@ -97,7 +139,7 @@ body {
 
 /*Mobile styles*/
 @media (min-width: 200px) and (max-width: 690px) {
-  
+
   .header {
     .title {
       left: 7%;
