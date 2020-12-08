@@ -47,7 +47,7 @@ body {
 
       .text-animation {
         display: inline-flex;
-        height: 50px;
+        height: var(--header-title-font-size);
         overflow: hidden;
 
         .title-emphasis {
@@ -62,21 +62,21 @@ body {
       @keyframes animate {
         0%,
         30% {
-          transform: translateY(0);
+          transform: translateY(calc(-0.02 * var(--header-title-font-size)));
         }
 
         33%,
         63% {
-          transform: translateY(calc(-1 * var(--header-title-font-size)));
+          transform: translateY(calc(-1.1 * var(--header-title-font-size)));
         }
 
         66%,
         96% {
-          transform: translateY(calc(-2 * var(--header-title-font-size)));
+          transform: translateY(calc(-2.1 * var(--header-title-font-size)));
         }
 
         100% {
-          transform: translateY(calc(-3 * var(--header-title-font-size)));
+          transform: translateY(calc(-3.1 * var(--header-title-font-size)));
         }
       }
 
