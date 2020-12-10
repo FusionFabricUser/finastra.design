@@ -105,7 +105,8 @@ body {
  
     .img1,
     .img2,
-    .img3 {
+    .img3,
+    .crop-mark {
       position: absolute;
       height: auto;
     }
@@ -127,6 +128,11 @@ body {
       height: 42%;
       right: 3%;
       bottom: 4%;
+    }
+
+    .crop-mark {
+      top: -5%;
+      right: 6%;
     }
   }
 }
