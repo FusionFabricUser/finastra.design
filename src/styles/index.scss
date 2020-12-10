@@ -17,7 +17,7 @@ body {
   .logo {
     font-size: 30px;
     letter-spacing: normal;
-    margin: 16px;
+    margin-bottom: 16px;
   }
 
   .title {
@@ -141,15 +141,10 @@ body {
 @media (min-width: 700px) and (max-width: 1024px) {
   .header {
     --header-title-target-size: 6vw;
-    .title {
-      top: 16%;
-      left: 10%;
-    }
     .team-images {
       width: 70%;
       left: 15%;
       right: 15%;
-      bottom: 0;
     }
   }
 }
@@ -158,7 +153,8 @@ body {
 @media (max-width: 699px) {
   .header {
     --header-title-target-size: 6vw;
-    --header-title-font-size: 7vw;
+    --header-title-font-size: 6vw;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     .title {
@@ -176,6 +172,13 @@ body {
       left: unset;
       right: unset;
       height: 250px;
+
+      .crop-mark {
+        top: unset;
+        right: unset;
+        bottom: 5%;
+        left: 5%;
+      }
     }
   }
 }
