@@ -157,6 +157,11 @@ body {
     padding: 40px;
     display: flex;
     flex-direction: column;
+    height: auto;
+
+    .logo {
+      font-size: 15px;
+    }
     .title {
       order: 1;
       position: relative;
@@ -172,6 +177,10 @@ body {
       left: unset;
       right: unset;
       height: 250px;
+
+      .img1 {
+        max-width: 300px;
+      }
 
       .crop-mark {
         top: unset;
