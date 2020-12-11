@@ -40,44 +40,18 @@ body {
     }
 
     .title-line {
-      display: inline-block;
       position: relative;
       background-color: black;
       padding: 8px;
 
-      .text-animation {
-        display: inline-flex;
-        height: var(--header-title-font-size);
+      .title-animation {
+        display: inline-block;
         overflow: hidden;
-
-        .title-emphasis {
-          position: relative;
-          padding: 0;
-          margin:0;
-          color: #f32393;
-          animation: animate 5s linear infinite;
-        }
+        vertical-align: bottom;
       }
-
-      @keyframes animate {
-        0%,
-        30% {
-          transform: translateY(calc(-0.02 * var(--header-title-font-size)));
-        }
-
-        33%,
-        63% {
-          transform: translateY(calc(-1.1 * var(--header-title-font-size)));
-        }
-
-        66%,
-        96% {
-          transform: translateY(calc(-2.1 * var(--header-title-font-size)));
-        }
-
-        100% {
-          transform: translateY(calc(-3.1 * var(--header-title-font-size)));
-        }
+      .title-emphasis {
+        color: #f32393;
+        display: inline-block;
       }
 
       &::before {
