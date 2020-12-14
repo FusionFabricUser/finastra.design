@@ -60,7 +60,10 @@ body {
         margin-top: -8px;
         margin-left: -8px;
         background-color: white;
-        transform: translate(var(--header-title-line-bg-shift), var(--header-title-line-bg-shift));
+        transform: translate(
+          var(--header-title-line-bg-shift),
+          var(--header-title-line-bg-shift)
+        );
         width: 100%;
         height: 100%;
         z-index: -1;
@@ -76,7 +79,7 @@ body {
     width: 55%;
     height: 488px;
     left: 30%;
- 
+
     .img1,
     .img2,
     .img3,
@@ -115,10 +118,17 @@ body {
 @media (min-width: 700px) and (max-width: 1024px) {
   .header {
     --header-title-target-size: 6vw;
+    --header-title-font-size: 8vw;
+
+    .title {
+      bottom: 150px;
+      left: 10%;
+    }
+
     .team-images {
-      width: 70%;
-      left: 15%;
-      right: 15%;
+      width: 72%;
+      height: 344px;
+      left: 20%;
     }
   }
 }
@@ -127,7 +137,7 @@ body {
 @media (max-width: 699px) {
   .header {
     --header-title-target-size: 6vw;
-    --header-title-font-size: 6vw;
+    --header-title-font-size: 8vw;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -150,7 +160,7 @@ body {
       width: 100%;
       left: unset;
       right: unset;
-      height: 250px;
+      height: 175px;
 
       .img1 {
         max-width: 300px;
