@@ -137,7 +137,7 @@ body {
 @media (max-width: 699px) {
   .header {
     --header-title-target-size: 6vw;
-    --header-title-font-size: 8vw;
+    --header-title-font-size: 11vw;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -152,6 +152,16 @@ body {
       bottom: unset;
       left: unset;
       margin-bottom: 30px;
+
+      .title-line {
+        .line-break {
+          line-height: calc(var(--header-title-target-size)*3.5);
+          &::before {
+            content: "\A";
+            white-space: pre;
+          }
+        }
+      }
     }
     .team-images {
       order: 2;
