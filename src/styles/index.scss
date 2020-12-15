@@ -8,7 +8,8 @@ body {
   --header-title-font-size: clamp(1.5rem, 4vw, 4rem);
 
   position: relative;
-  background: center center / 100% 100% no-repeat url("../images/home/header/bg.svg");
+  background: center center / 100% 100% no-repeat
+    url("../images/home/header/bg.svg");
   font: 700 60px Futura;
   color: white;
   height: 660px;
@@ -114,6 +115,17 @@ body {
   }
 }
 
+/* Desktop styles */
+@media (min-width: 1025px) {
+  .header {
+    .title {
+      .mobile {
+        display: none;
+      }
+    }
+  }
+}
+
 /*Tablet styles*/
 @media (min-width: 700px) and (max-width: 1024px) {
   .header {
@@ -123,6 +135,10 @@ body {
     .title {
       bottom: 150px;
       left: 10%;
+
+      .mobile {
+        display: none;
+      }
     }
 
     .team-images {
@@ -138,7 +154,7 @@ body {
   .header {
     --header-title-target-size: 6vw;
     --header-title-font-size: 11vw;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -153,13 +169,17 @@ body {
       left: unset;
       margin-bottom: 30px;
 
+      .desktop {
+        display: none;
+      }
+
       .title-line {
-        .line-break {
-          line-height: calc(var(--header-title-target-size)*3.5);
-          &::before {
-            content: "\A";
-            white-space: pre;
-          }
+        margin-bottom: 15px;
+        padding: 14px;
+
+        &::before {
+          margin-top: -16px;
+          margin-left: -16px;
         }
       }
     }
