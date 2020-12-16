@@ -4,6 +4,7 @@ body {
 
 .header {
   --header-title-line-bg-shift: 8px;
+  --header-title-line-bg-margin: -16px;
   --header-title-target-size: 4vw;
   --header-title-font-size: clamp(1.5rem, 4vw, 4rem);
 
@@ -58,8 +59,8 @@ body {
       &::before {
         content: "";
         position: absolute;
-        margin-top: -8px;
-        margin-left: -8px;
+        margin-top: var(--header-title-line-bg-margin) / 2;
+        margin-left: var(--header-title-line-bg-margin) / 2;
         background-color: white;
         transform: translate(
           var(--header-title-line-bg-shift),
@@ -167,7 +168,7 @@ body {
       position: relative;
       bottom: unset;
       left: unset;
-      margin-bottom: 30px;
+      margin-bottom: 5px;
 
       .desktop {
         display: none;
@@ -178,16 +179,16 @@ body {
         padding: 14px;
 
         &::before {
-          margin-top: -16px;
-          margin-left: -16px;
+          margin-top: var(--header-title-line-bg-margin);
+          margin-left: var(--header-title-line-bg-margin);
         }
       }
     }
     .team-images {
       order: 2;
       position: relative;
-      top: unset;
       width: 100%;
+      top: unset;
       left: unset;
       right: unset;
       height: 175px;
