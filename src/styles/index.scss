@@ -760,7 +760,7 @@ body {
               .job {
                 display: block;
                 font: 20px/31px Futura;
-                font-size: clamp(0.8rem, 1.1vw, 1.1rem);
+                font-size: clamp(0.7rem, 1vw, 1rem);
               }
             }
 
@@ -772,7 +772,7 @@ body {
               span {
                 align-self: center;
                 font: 15px/31px Futura;
-                font-size: clamp(0.7rem, 1vw, 1rem);
+                font-size: clamp(0.6rem, 1vw, 1rem);
               }
             }
           }
