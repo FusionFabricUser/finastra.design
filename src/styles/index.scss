@@ -121,6 +121,13 @@ body {
       right: 6%;
     }
   }
+
+  .link {
+    position: absolute;
+    top: 87%;
+    right: 30%;
+    z-index: -1;
+  }
 }
 
 .content {
@@ -1130,6 +1137,11 @@ body {
         right: unset;
         bottom: 5%;
         left: -5%;
+      }
+    }
+    .link {
+      img {
+        height: 190px;
       }
     }
   }
