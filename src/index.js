@@ -61,31 +61,3 @@ function scroll(element,direction,speed,distance,step){
         }
     }, speed);
 }
-
-function redirectTo(url, index) {
-  document.getElementsByClassName("article-photo")[index]
-  .onclick = function () {
-    window.open(url, "_blank");
-  };
-  document.getElementsByClassName("article-title")[index]
-  .onclick = function () {
-    window.open(url, "_blank");
-  };
-}
-
-redirectTo("https://medium.com/finastra-fintechs-devs/quick-peak-into-finastras-design-system-3504664228e7", 0);
-redirectTo("https://medium.com/finastra-fintechs-devs/finastras-developer-portal-more-than-just-apis-ec9be2e7b0b8", 1);
-redirectTo("https://www.linkedin.com/pulse/running-successful-remote-design-thinking-workshops-shelley-armstrong/", 2);
-
-
-document.getElementsByClassName('chip')[0].onclick = function() {
-    window.open("https://www.fusionfabric.cloud/", "_blank");
-}
-
-document.getElementsByClassName('chip')[1].onclick = function() {
-    window.open("https://design.fusionfabric.cloud/", "_blank");
-}
-
-document.getElementsByClassName('chip')[2].onclick = function() {
-    window.open("https://www.fusionfabric.cloud/", "_blank");
-}
