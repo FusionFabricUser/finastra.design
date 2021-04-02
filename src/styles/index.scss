@@ -22,10 +22,9 @@ body {
   height: 660px;
   padding: 24px;
 
-  .logo {
-    font-size: 30px;
-    letter-spacing: normal;
-    margin-bottom: 16px;
+  .logo img {
+    width: 200px;
+    margin: 16px 0px 0px 32px;
   }
 
   .title {
@@ -912,7 +911,7 @@ body {
           color: black;
           text-decoration: none;
         }
-         a:visited {
+        a:visited {
           color: black;
         }
 
@@ -1197,8 +1196,9 @@ body {
     flex-direction: column;
     height: auto;
 
-    .logo {
-      font-size: 15px;
+    .logo img {
+      width: 150px;
+      margin: 0px 0px 16px 0px;
     }
 
     .title {
