@@ -683,7 +683,7 @@ body {
           display: none;
           width: 80%;
           height: 80px;
-          bottom: 168px;
+          top: 55%;
           padding: 16px;
           font: 20px/31px Roboto;
           font-size: clamp(1rem, 1.1vw, 1.1rem);
@@ -802,7 +802,6 @@ body {
 
         .person-photo {
           transform: rotate(5deg) scale(1.1) translateX(-5%);
-          padding-bottom: 32px;
           transition: 0.2s;
           &::after {
             bottom: -10%;
@@ -821,7 +820,7 @@ body {
 
         .person-details {
           opacity: 1;
-          transform: scale(1.1);
+          transform: scale(1.1) translateY(10%);
         }
       }
 
@@ -1391,7 +1390,9 @@ body {
           width: 200px;
 
           .person-quote {
-            bottom: 120px;
+            top: 50%;
+            font-size: clamp(0.8rem, 1.1vw, 1.1rem);
+            padding: 8px;
           }
 
           .person-details {
