@@ -970,13 +970,13 @@ body {
         .article-title {
           display: inline-block;
           font: 500 24px/46px Roboto;
-          font-size: clamp(1rem, 1.7vw, 1.5rem);
+          font-size: clamp(1rem, 1.2vw, 1.2rem);
           line-height: 1.5em;
           margin-bottom: 20px;
         }
         .article-text {
           font: 300 24px/30px Roboto;
-          font-size: clamp(1rem, 1.3vw, 1.3rem);
+          font-size: clamp(1rem, 1.2vw, 1.2rem);
         }
       }
     }
