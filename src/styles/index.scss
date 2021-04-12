@@ -661,7 +661,7 @@ body {
         display: inline-block;
         width: 300px;
         padding-left: 32px;
-        transition: 0.5s;
+        transition: 0.5s ease ;
 
         .person-photo {
           .second-photo {
@@ -797,11 +797,10 @@ body {
 
       .item:hover,
       .item:active {
-        transition: 0.7s;
-        padding: 0px 62px 0 62px;
+        padding: 0px 32px 0 62px;
 
         .person-photo {
-          transform: rotate(5deg) scale(1.1) translateX(-5%);
+          transform: rotate(5deg) scale(1.1);
           transition: 0.2s;
           &::after {
             bottom: -10%;
@@ -809,8 +808,11 @@ body {
         }
 
         .person-quote {
-          width: 70%;
+          width: 75%;
           display: block;
+          span {
+            width: 250px;
+          }
         }
 
         .person-icon {
@@ -824,13 +826,6 @@ body {
         }
       }
 
-      .item:hover,
-      .item:active {
-        transition: none;
-        .person-quote {
-          display: block;
-        }
-      }
       
       .last-item {
         margin-right: 150px;
@@ -1416,8 +1411,11 @@ body {
           }
 
           .person-quote {
-            width: 65%;
+            width: 70%;
             height: 65px;
+            span {
+              width: 180px;
+            }
           }
         }
 
