@@ -974,8 +974,11 @@ body {
         }
 
         .article-title {
+          display: inline-block;
           font: 500 24px/46px Roboto;
-          font-size: clamp(1rem, 1.7vw, 1.7rem);
+          font-size: clamp(1rem, 1.7vw, 1.5rem);
+          line-height: 1.5em;
+          margin-bottom: 20px;
         }
         .article-text {
           font: 300 24px/30px Roboto;
