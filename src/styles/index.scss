@@ -661,7 +661,7 @@ body {
         display: inline-block;
         width: 300px;
         padding-left: 32px;
-        transition: 0.5s;
+        transition: 0.5s ease ;
 
         .person-photo {
           .second-photo {
@@ -683,7 +683,7 @@ body {
           display: none;
           width: 80%;
           height: 80px;
-          bottom: 168px;
+          top: 55%;
           padding: 16px;
           font: 20px/31px Roboto;
           font-size: clamp(1rem, 1.1vw, 1.1rem);
@@ -797,12 +797,10 @@ body {
 
       .item:hover,
       .item:active {
-        transition: 0.7s;
-        padding: 0px 62px 0 62px;
+        padding: 0px 32px 0 62px;
 
         .person-photo {
-          transform: rotate(5deg) scale(1.1) translateX(-5%);
-          padding-bottom: 32px;
+          transform: rotate(5deg) scale(1.1);
           transition: 0.2s;
           &::after {
             bottom: -10%;
@@ -810,8 +808,11 @@ body {
         }
 
         .person-quote {
-          width: 70%;
+          width: 75%;
           display: block;
+          span {
+            width: 250px;
+          }
         }
 
         .person-icon {
@@ -821,17 +822,10 @@ body {
 
         .person-details {
           opacity: 1;
-          transform: scale(1.1);
+          transform: scale(1.1) translateY(10%);
         }
       }
 
-      .item:hover,
-      .item:active {
-        transition: none;
-        .person-quote {
-          display: block;
-        }
-      }
       
       .last-item {
         margin-right: 150px;
@@ -976,13 +970,13 @@ body {
         .article-title {
           display: inline-block;
           font: 500 24px/46px Roboto;
-          font-size: clamp(1rem, 1.7vw, 1.5rem);
+          font-size: clamp(1rem, 1.2vw, 1.2rem);
           line-height: 1.5em;
           margin-bottom: 20px;
         }
         .article-text {
           font: 300 24px/30px Roboto;
-          font-size: clamp(1rem, 1.3vw, 1.3rem);
+          font-size: clamp(1rem, 1.2vw, 1.2rem);
         }
       }
     }
@@ -992,6 +986,7 @@ body {
 .footer {
   position: relative;
   background: url("../images/home/content/team/bg-black.svg");
+  background-size:cover;
   width: 100%;
   height: 700px;
 
@@ -1394,7 +1389,9 @@ body {
           width: 200px;
 
           .person-quote {
-            bottom: 120px;
+            top: 50%;
+            font-size: clamp(0.8rem, 1.1vw, 1.1rem);
+            padding: 8px;
           }
 
           .person-details {
@@ -1418,8 +1415,11 @@ body {
           }
 
           .person-quote {
-            width: 65%;
+            width: 70%;
             height: 65px;
+            span {
+              width: 180px;
+            }
           }
         }
 
@@ -1472,6 +1472,7 @@ body {
     .contact {
       padding: 0px 48px 0px 28px;
       top: 35%;
+      width: fit-content;
       img {
         width: 18px;
         height: 18px;
@@ -1495,7 +1496,7 @@ body {
     }
 
     .socials-icons {
-      padding-right: 32px;
+      padding-right: 16px;
       img {
         width: 30px;
         height: 30px;
