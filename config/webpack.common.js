@@ -44,6 +44,7 @@ module.exports = {
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     new HtmlWebpackPlugin({
       title: 'finastra.design',
+      favicon: paths.src + '/images/fav-icon.svg',
       template: paths.src + '/home-page.html', // template file
       filename: 'index.html', // output file
       minify: {
