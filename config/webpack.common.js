@@ -45,6 +45,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'finastra.design',
       template: paths.src + '/home-page.html', // template file
+      inject: 'body',
       filename: 'index.html', // output file
       minify: {
         collapseWhitespace: false
