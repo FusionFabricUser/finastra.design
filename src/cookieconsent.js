@@ -1,4 +1,8 @@
-function init() {
+import "./styles/_cookieconsent.scss";
+
+let cc = {};
+
+cc.init = function init() {
   window.cookieconsent.initialise({
     "palette": {
       "popup": {
@@ -44,4 +48,4 @@ function init() {
   });
 }
 
-module.exports = {init};
+export { cc as cc };
