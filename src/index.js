@@ -5,6 +5,9 @@ import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 
 import "regenerator-runtime/runtime";
+import { cc } from "./cookieconsent";
+
+cc.init();
 
 gsap.registerPlugin(TextPlugin);
 const middle = innerWidth / 2;

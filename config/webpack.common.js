@@ -46,6 +46,7 @@ module.exports = {
       title: 'finastra.design',
       favicon: paths.src + '/images/fav-icon.svg',
       template: paths.src + '/home-page.html', // template file
+      inject: 'body',
       filename: 'index.html', // output file
       minify: {
         collapseWhitespace: false
