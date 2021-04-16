@@ -1,0 +1,443 @@
+.our-team {
+    display: block;
+    background: url("../images/home/content/team/bg-black.svg");
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+    padding-bottom: 5%;
+
+    .team-title {
+      position: relative;
+      display: flex;
+      margin: 72px 0px 0px 72px;
+      padding-top: 72px;
+
+      .title-border {
+        margin-left: 25px;
+
+        .title-text {
+          color: #ffffff;
+          font: 700 43px/31px Futura, Hind, Verdana, Arial Black, sans-serif;
+          font-size: var(--content-title-font-size);
+          padding: 14px 0px 14px 0px;
+        }
+
+        &::before,
+        &::after {
+          position: absolute;
+          content: "";
+          font-size: 30em;
+          padding: var(--content-border-padding);
+          background-size: var(--content-border-background-size);
+          background-repeat: no-repeat;
+          background-image: var(--content-border-background-img);
+          transform: rotate(90deg);
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        top: 30%;
+        left: 504px;
+        height: 65%;
+        font-size: 22px;
+        padding: var(--content-border-padding);
+        background-size: var(--content-border-background-size);
+        background-repeat: no-repeat;
+        background-image: var(--content-border-background-img);
+      }
+    }
+
+    .team-sub-title {
+      margin-left: 170px;
+      margin-top: 32px;
+      width: 70%;
+      color: #ffffff;
+      font: 300 24px/31px Roboto ,roboto, Helvetica Neue, sans-serif;
+      font-size: clamp(1.2rem, 1.7vw, 1.7rem);
+    }
+
+    .team-presentation {
+      padding: 70px 0px 0px 0px;
+      display: block;
+
+      .container {
+        position: relative;
+        width: 100%;
+        height: max-content;
+        display: block;
+        overflow: hidden;
+      }
+
+      .scroll-left {
+        position: absolute;
+        background: url("../images/home/content/team/arrow.svg") no-repeat;
+        width: 50px;
+        height: 40px;
+        transform: rotate(180deg);
+        border: none;
+        outline: inherit;
+        right: 50px;
+        top: 3em;
+        z-index: 11;
+      }
+
+      .scroll-right {
+        position: absolute;
+        background: url("../images/home/content/team/arrow.svg") no-repeat;
+        width: 50px;
+        height: 40px;
+        border: none;
+        outline: inherit;
+        right: 0px;
+        top: 3em;
+        z-index: 11;
+      }
+
+      .carousel {
+        display: block;
+        width: 100%;
+        overflow-x: scroll;
+        padding: 60px 0px 0px 100px;
+        white-space: nowrap;
+        padding-bottom: 32px;
+      }
+
+      .carousel::-webkit-scrollbar {
+        display: none;
+      }
+
+      .item {
+        position: relative;
+        display: inline-block;
+        width: 300px;
+        padding-left: 32px;
+        transition: 0.5s ease;
+
+        .person-photo {
+          .first-photo {
+            visibility: visible;
+          }
+          .second-photo {
+            position: fixed;
+            left: 0;
+          }
+        }
+
+        .person-icon {
+          position: absolute;
+          width: 30%;
+          bottom: 26%;
+          right: 7%;
+        }
+
+        .person-quote {
+          position: absolute;
+          background-color: #ffed15;
+          display: none;
+          width: 80%;
+          height: 80px;
+          top: 55%;
+          padding: 16px;
+          font: 20px/31px Roboto ,roboto, Helvetica Neue, sans-serif;
+          font-size: clamp(1rem, 1.1vw, 1.1rem);
+          text-align: center;
+
+          span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: inherit;
+            white-space: normal;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+        }
+
+        .quote-bg {
+          background-color: #36d4f2;
+        }
+
+        .person-details {
+          margin-top: 32px;
+          color: white;
+          opacity: 0.7;
+          padding: 32px 0px 32px 0px;
+          background-position: 0 0, 0 0, 100% 0, 0 100%;
+          background-size: 2px 100%, 100% 2px, 2px 100%, 100% 3px;
+          background-repeat: no-repeat;
+          background-image: repeating-linear-gradient(
+              0deg,
+              var(--clr-border),
+              var(--clr-border) 10px,
+              transparent 10px,
+              transparent 20px
+            ),
+            // left
+            repeating-linear-gradient(
+                90deg,
+                var(--clr-border),
+                var(--clr-border) 10px,
+                transparent 10px,
+                transparent 20px
+              ),
+            // top
+            repeating-linear-gradient(
+                180deg,
+                var(--clr-border),
+                var(--clr-border) 10px,
+                transparent 10px,
+                transparent 20px
+              ),
+            // right
+            repeating-linear-gradient(
+                270deg,
+                var(--clr-border),
+                var(--clr-border) 10px,
+                transparent 10px,
+                transparent 20px
+              )
+              // bottom
+;
+          border-image: repeating-linear-gradient(
+            0deg,
+            var(--clr-border),
+            var(--clr-border) 10px,
+            transparent 10px,
+            transparent 20px
+          );
+
+          .person-title {
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+            .description {
+              line-height: 9px;
+
+              .name {
+                display: block;
+                font: 700 28px/31px Futura, Hind, Verdana, Arial Black, sans-serif;
+                font-size: clamp(1.1rem, 1.5vw, 1.5rem);
+              }
+              .job {
+                display: block;
+                font: 20px/31px Futura, Hind, Verdana, Arial Black, sans-serif;
+                font-size: clamp(0.7rem, 1vw, 1rem);
+              }
+            }
+
+            .localisation {
+              display: flex;
+              flex-direction: column-reverse;
+              width: 32px;
+
+              span {
+                align-self: center;
+                font: 15px/31px Futura, Hind, Verdana, Arial Black, sans-serif;
+                font-size: clamp(0.6rem, 1vw, 1rem);
+              }
+            }
+          }
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .item:nth-child(4n-7) {
+        .person-photo {
+          background: transparent
+            linear-gradient(180deg, #229de8 0%, #36d4f2 100%) 0% 0%;
+        }
+      }
+      .item:nth-child(4n-6) {
+        .person-photo {
+          background: transparent
+            linear-gradient(180deg, #38cc8c 0%, #48db7b 100%) 0% 0%;
+        }
+      }
+      .item:nth-child(4n-5) {
+        .person-photo {
+          background: transparent
+            linear-gradient(180deg, #f5c542 0%, #fafa32 100%) 0% 0%;
+        }
+      }
+      .item:nth-child(4n-4) {
+        .person-photo {
+          background: transparent
+            linear-gradient(180deg, #f918a1 0%, #ea41be 100%) 0% 0%;
+        }
+      }
+
+      .item:hover,
+      .item:active {
+        padding: 0px 32px 0 62px;
+
+        .person-photo {
+          transform: rotate(5deg) scale(1.1);
+          transition: 0.2s;
+          &::after {
+            bottom: -10%;
+          }
+          .first-photo {
+            visibility: hidden;
+          }
+        }
+
+        .person-quote {
+          width: 75%;
+          display: block;
+          span {
+            width: 250px;
+          }
+        }
+
+        .person-icon {
+          width: 20%;
+          left: 0;
+        }
+
+        .person-details {
+          opacity: 1;
+          transform: scale(1.1) translateY(10%);
+        }
+      }
+
+      .last-item {
+        margin-right: 150px;
+      }
+    }
+}
+
+/*Tablet styles*/
+@media (min-width: 700px) and (max-width: 1024px) {
+  .content {
+    .our-team {
+      .team-title {
+        .title-border {
+          &::before,
+          &::after {
+            font-size: 20em;
+          }
+        }
+
+        &::after {
+          left: 400px;
+        }
+      }
+      .team-presentation {
+        .scroll-left,
+        .scroll-right {
+          display: none;
+        }
+
+        .item {
+          width: 280px;
+
+          .person-details {
+            padding: 16px 0px 16px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Mobile styles*/
+@media (max-width: 699px) {
+  .content {
+    .our-team {
+      padding-bottom: 10%;
+      .team-title {
+        margin-left: 10px;
+        padding-top: 48px;
+        .title-border {
+          &::before,
+          &::after {
+            font-size: 20em;
+          }
+        }
+
+        img {
+          height: 58px;
+          width: 58px;
+        }
+
+        &::after {
+          left: 385px;
+        }
+      }
+      .team-sub-title {
+        margin-left: 40px;
+        width: 80%;
+      }
+
+      .team-presentation {
+        padding: 23px 0px 0px 0px;
+        .scroll-left,
+        .scroll-right {
+          display: none;
+        }
+
+        .carousel {
+          padding-left: 30px;
+        }
+
+        .item {
+          width: 200px;
+
+          .person-quote {
+            top: 50%;
+            font-size: clamp(0.8rem, 1.1vw, 1.1rem);
+            padding: 8px;
+          }
+
+          .person-details {
+            padding-top: 16px;
+            padding-bottom: 16px;
+
+            .person-title {
+              .localisation {
+                img {
+                  width: 80%;
+                }
+              }
+            }
+          }
+        }
+
+        .item:hover,
+        .item:active {
+          .person-icon {
+            top: 230px;
+          }
+
+          .person-quote {
+            width: 70%;
+            height: 65px;
+            span {
+              width: 180px;
+            }
+          }
+        }
+
+        .last-item {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+  .content .our-team .carousel{
+    scrollbar-width: none;
+   }
+}
