@@ -656,6 +656,10 @@ body {
         padding-bottom: 32px;
       }
 
+      .carousel::-webkit-scrollbar {
+        display: none;
+      }
+
       .item {
         position: relative;
         display: inline-block;
@@ -1532,4 +1536,10 @@ body {
       }
     }
   }
+}
+
+@-moz-document url-prefix() {
+  .content .our-team .carousel{
+          scrollbar-width: none;
+   }
 }
