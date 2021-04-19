@@ -106,28 +106,28 @@
         }
 
         .chip {
-          border: 0.1rem solid #ea41be;
+          border: 0.1rem solid #D818A5;
           padding: 0 25px;
-          font: 300 14px/27px Roboto, roboto, Helvetica Neue, sans-serif;
+          font: 400 14px/27px Roboto, roboto, Helvetica Neue, sans-serif;
           font-size: clamp(1rem, 1.1vw, 1.1rem);
-          color: #ea41be;
+          color: #D818A5;
           border-radius: 50px;
           margin: 0px 0px 12px 8px;
         }
 
         .chip:hover {
-          background-color: #ea41be;
-          color: white;
+          background-color: #D818A5;
+          color: #fafafa;
         }
 
         .chip-color {
-          color: #28a9ea;
-          border-color: #28a9ea;
+          color: #117BB0;
+          border-color: #117BB0;
         }
 
         .chip-color:hover {
-          background-color: #28a9ea;
-          color: white;
+          background-color: #117BB0;
+          color:  #fafafa;
         }
       }
 
