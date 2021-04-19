@@ -1,12 +1,11 @@
 <html>
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,500italic" />
+  <link rel="prelaod" as="style" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,500italic" />
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
@@ -30,10 +29,10 @@
       </div>
 
       <div class="team-images">
-        <img class="img2" src="./images/home/header/img1.png" />
-        <img class="img1" src="./images/home/header/img2.png" />
-        <img class="img3" src="./images/home/header/img3.png" />
-        <img class="crop-mark" src="./images/home/header/crop.svg" />
+        <img loading="eager" class="img2" src="./images/home/header/img1.png" />
+        <img loading="eager" class="img1" src="./images/home/header/img2.png" />
+        <img loading="eager"class="img3" src="./images/home/header/img3.png" />
+        <img loading="eager" class="crop-mark" src="./images/home/header/crop.svg" />
       </div>
 
       <div class="title">
@@ -102,13 +101,13 @@
 
           <div class="mission-image">
             <div class="img-3">
-              <img src="./images/home/content/mission/img3.png" />
+              <img loading="lazy" src="./images/home/content/mission/img3.jpg" />
             </div>
             <div class="img-2">
-              <img src="./images/home/content/mission/img2.png" />
+              <img loading="lazy" src="./images/home/content/mission/img2.jpg" />
             </div>
             <div class="img-1">
-              <img src="./images/home/content/mission/img1.png" />
+              <img loading="lazy" src="./images/home/content/mission/img1.jpg" />
             </div>
           </div>
         </div>
@@ -137,8 +136,8 @@
             <div class="carousel">
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Adrian Apetrei/Adrian-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Adrian Apetrei//Adrian-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Adrian Apetrei/Adrian-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Adrian Apetrei//Adrian-2.png" />
                 </div>
 
                 <div class="person-quote" title="It always seems impossible until it's done">
@@ -165,8 +164,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Shelley/Shelley-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Shelley/Shelley-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Shelley/Shelley-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Shelley/Shelley-2.png" />
                 </div>
 
                 <div class="person-quote" title="People ignore design that ignores people">
@@ -193,8 +192,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/David-Bocle/David-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/David-Bocle/David-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/David-Bocle/David-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/David-Bocle/David-2.png" />
                 </div>
 
                 <div class="person-quote quote-bg" title="You saw me, but you didn’t look at me">
@@ -221,8 +220,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Adelina Chiripuci/Adelina-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Adelina Chiripuci/Adelina-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Adelina Chiripuci/Adelina-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Adelina Chiripuci/Adelina-2.png" />
                 </div>
 
                 <div class="person-quote"
@@ -251,8 +250,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Xinyi/xinyi-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Xinyi/xinyi-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Xinyi/xinyi-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Xinyi/xinyi-2.png" />
                 </div>
 
                 <div class="person-quote" title="Knowledge is infinite. 学无止境">
@@ -279,8 +278,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Daniel/daniel-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Daniel/daniel-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Daniel/daniel-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Daniel/daniel-2.png" />
                 </div>
 
                 <div class="person-quote" title="Design can fix anything">
@@ -307,8 +306,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Dorsaf/DORSAF-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Dorsaf/DORSAF-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Dorsaf/DORSAF-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Dorsaf/DORSAF-2.png" />
                 </div>
 
                 <div class="person-quote quote-bg" title="If you want it, work for it">
@@ -335,8 +334,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Vikas/vikas-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Vikas/vikas-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Vikas/vikas-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Vikas/vikas-2.png" />
                 </div>
 
                 <div class="person-quote" title="live and let live">
@@ -363,8 +362,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Raya/raya-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Raya/raya-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Raya/raya-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Raya/raya-2.png" />
                 </div>
 
                 <div class="person-quote" title="Don't limit the challenges, challenge the limits">
@@ -391,8 +390,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Chloe/chloe-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Chloe/chloe-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Chloe/chloe-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Chloe/chloe-2.png" />
                 </div>
 
                 <div class="person-quote" title="I’m not picky, I just know what I want">
@@ -419,8 +418,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/David Martin/david-martin-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/David Martin/david-martin-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/David Martin/david-martin-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/David Martin/david-martin-2.png" />
                 </div>
 
                 <div class="person-quote quote-bg"
@@ -449,8 +448,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Biju/biju-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Biju/biju-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Biju/biju-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Biju/biju-2.png" />
                 </div>
 
                 <div class="person-quote" title="Art is subjective however, Design is objective">
@@ -477,8 +476,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/narcisa-minca/narcisa-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/narcisa-minca/narcisa-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/narcisa-minca/narcisa-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/narcisa-minca/narcisa-2.png" />
                 </div>
 
                 <div class="person-quote" title="There is a defiance in being a dreamer">
@@ -505,8 +504,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Francine/Francine-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Francine/francine-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Francine/Francine-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Francine/francine-2.png" />
                 </div>
 
                 <div class="person-quote" title="When you focus on the good, the good gets better">
@@ -533,8 +532,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Cristian/cristian-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Cristian/cristian-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Cristian/cristian-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Cristian/cristian-2.png" />
                 </div>
 
                 <div class="person-quote quote-bg" title="If you want the results, you gotta do the work">
@@ -561,8 +560,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Anantharama/Ananthan-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Anantharama/Ananthan-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Anantharama/Ananthan-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Anantharama/Ananthan-2.png" />
                 </div>
 
                 <div class="person-quote" title="You only fail when you stop trying">
@@ -589,8 +588,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Juliette/juliette-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Juliette/juliette-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Juliette/juliette-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Juliette/juliette-2.png" />
                 </div>
 
                 <div class="person-quote" title="Less is more">
@@ -617,8 +616,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Antonella/Antonnela-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Antonella/Antonnela-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Antonella/Antonnela-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Antonella/Antonnela-2.png" />
                 </div>
 
                 <div class="person-quote" title="When the going gets tough, the tough get going">
@@ -645,8 +644,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Kelby/kelby.png" />
-                  <img class="second-photo" src="./images/home/content/team/Kelby/kelby.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Kelby/kelby.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Kelby/kelby.png" />
                 </div>
 
                 <div class="person-quote quote-bg" title="Do good work for good people">
@@ -674,8 +673,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/octavian/octavian-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/octavian/octavian-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/octavian/octavian-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/octavian/octavian-2.png" />
                 </div>
 
                 <div class="person-quote"
@@ -703,8 +702,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Julien/juju1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Julien/juju2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Julien/juju1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Julien/juju2.png" />
                 </div>
 
                 <div class="person-quote" title="Chi va piano va sano e va lontano">
@@ -731,8 +730,8 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Thomas/Thomas-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Thomas/Thomas-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Thomas/Thomas-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Thomas/Thomas-2.png" />
                 </div>
 
                 <div class="person-quote" title="Just do it">
@@ -759,8 +758,8 @@
 
               <div class="item last-item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Heather/heather-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Heather/heather-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Heather/heather-1.png" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Heather/heather-2.png" />
                 </div>
 
                 <div class="person-quote quote-bg" title="Today is the youngest we'll ever be">
