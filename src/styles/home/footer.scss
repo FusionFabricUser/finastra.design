@@ -1,94 +1,107 @@
 footer {
-    position: relative;
-    background: url("../images/home/content/team/bg-black.svg");
-    background-size: cover;
-    width: 100%;
-    height: 700px;
-  
-    .footer-title {
-      color: #34b9ca;
-      font: 700 44px/52px Futura, Hind, Verdana, Arial Black, sans-serif;
-      font-size: clamp(1.5rem, 2.7vw, 2.7rem);
-      text-align: center;
-      padding: 132px 32px 0 32px;
-    }
-  
-    .contact {
+  position: relative;
+  background: url("../images/home/content/team/bg-black.svg");
+  background-size: cover;
+  width: 100%;
+  height: 850px;
+
+  .footer-title {
+    color: #34b9ca;
+    font: 700 44px/52px Futura, Hind, Verdana, Arial Black, sans-serif;
+    font-size: clamp(1.5rem, 2.7vw, 2.7rem);
+    text-align: center;
+    padding: 132px 32px 0 32px;
+  }
+
+  .contact {
+    position: absolute;
+    display: inline-block;
+    color: white;
+    border: 0.2rem solid #34b9ca;
+    border-radius: 50px;
+    padding: 16px 92px 16px 72px;
+    font: 700 35px/52px Futura, Hind, Verdana, Arial Black, sans-serif;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    img {
       position: absolute;
-      display: inline-block;
-      color: white;
-      border: 0.2rem solid #34b9ca;
-      border-radius: 50px;
-      padding: 16px 92px 16px 72px;
-      font: 700 35px/52px Futura, Hind, Verdana, Arial Black, sans-serif;
-      left: 50%;
       top: 50%;
-      transform: translate(-50%);
-      cursor: pointer;
-      img {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    span {
+      margin-right: 16px;
+      font-size: clamp(1rem, 1.8vw, 1.8rem);
+    }
+  }
+
+  .footer-links {
+    position: absolute;
+    display: inline-block;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: fit-content;
+
+    .footer-name {
+      font: 400 24px/46px Roboto, roboto, Helvetica Neue, sans-serif;
+      font-size: clamp(1rem, 1.5vw, 1.5rem);
+      color: white;
+      text-align: center;
+      margin-bottom: -10px;
+    }
+
+    .footer-list {
+      display: flex;
+      width: max-content;
+      font: 300 18px/52px Roboto, roboto, Helvetica Neue, sans-serif;
+      font-size: clamp(0.6rem, 1vw, 1rem);
+      list-style-type: none;
+
+      a {
+        color: white;
+        text-decoration: none;
       }
-      span {
-        margin-right: 16px;
-        font-size: clamp(1rem, 1.8vw, 1.8rem);
+
+      a:visited {
+        color: white;
+      }
+
+      li {
+        cursor: pointer;
+        text-align: center;
+        margin: 0 15px 0 0;
       }
     }
-  
-    .footer-links {
-      position: absolute;
+
+    .finastra-logo {
+      position: relative;
       display: inline-block;
-      color: white;
+      margin-bottom: 24px;
       left: 50%;
       transform: translateX(-50%);
-      bottom: 0;
-      width: fit-content;
-  
-      .footer-name {
-        font: 300 24px/46px Roboto, roboto, Helvetica Neue, sans-serif;
-        font-size: clamp(1.2rem, 1.8vw, 1.8rem);
-        color: white;
-        text-align: center;
-      }
-  
-      .footer-list {
-        display: flex;
-        width: max-content;
-        font: 300 18px/52px Roboto, roboto, Helvetica Neue, sans-serif;
-        font-size: clamp(0.8rem, 1.3vw, 1.3rem);
-        list-style-type: none;
-  
-        a {
-          color: white;
-          text-decoration: none;
-        }
-  
-        a:visited {
-          color: white;
-        }
-  
-        li {
-          cursor: pointer;
-          text-align: center;
-          margin: 0 15px 0 0;
-        }
-      }
-    }
-  
-    .socials-icons {
-      position: absolute;
-      right: 0;
-      display: flex;
-      flex-direction: column;
-      padding-right: 48px;
-  
       img {
-        display: block;
-        margin-bottom: 15px;
-        cursor: pointer;
+        width: 100px;
+        height: auto;
       }
     }
+  }
+
+  .socials-icons {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding-right: 48px;
+
+    img {
+      display: block;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+  }
 }
 
 /*Mobile styles*/
@@ -121,6 +134,13 @@ footer {
         margin-top: 0px;
         li {
           margin: 0 0px -15px 0;
+        }
+      }
+
+      .finastra-logo {
+        top: 5px;
+        img {
+          width: 50px;
         }
       }
     }
