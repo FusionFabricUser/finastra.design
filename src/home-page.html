@@ -1,14 +1,17 @@
-<html>
+<html lang="en">
 
 <head>
+  <meta name="description" content="We are an international team of designers and developers with the motivation to re-imagine the user experience of building financial services">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,500italic" />
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,500italic" />
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 
   <!-- Open Graph data -->
@@ -16,24 +19,23 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="/" />
   <meta property="og:image" content="https://finastra.design/assets/images/thumbnail-finastra-design.png" />
-  <meta
-    property="og:description"
-    content="We are an international team of designers and developers with the motivation to re-imagine the user experience of building financial services"
-  />
+  <meta property="og:description"
+    content="We are an international team of designers and developers with the motivation to re-imagine the user experience of building financial services" />
 </head>
 
 <body>
+  <a class="skip-link" href="#maincontent">Skip to main</a>
   <div class="wrapper">
-    <header>
+    <header id="maincontent">
       <div class="logo">
-        <img src="./images/home/header/Logo_finastra.design.png" />
+        <img src="./images/home/header/Logo_finastra.design.png" alt="finastra.design logo" />
       </div>
 
       <div class="team-images">
-        <img class="img2" src="./images/home/header/img1.png" />
-        <img class="img1" src="./images/home/header/img2.png" />
-        <img class="img3" src="./images/home/header/img3.png" />
-        <img class="crop-mark" src="./images/home/header/crop.svg" />
+        <img loading="eager" class="img2" src="./images/home/header/img1.png" alt="header img1" />
+        <img loading="eager" class="img1" src="./images/home/header/img2.png" alt="header img2" />
+        <img loading="eager" class="img3" src="./images/home/header/img3.png" alt="header img3" />
+        <img loading="eager" class="crop-mark" src="./images/home/header/crop.svg" alt="header crop" />
       </div>
 
       <div class="title">
@@ -51,13 +53,13 @@
         <span class="mobile title-line">of finance</span>
       </div>
       <div class="link">
-        <img src="./images/home/header/link.png" />
+        <img src="./images/home/header/link.png" alt="header link" />
       </div>
     </header>
 
     <div class="content">
       <section class="introduction">
-        <img src="./images/home/content/introduction/icon-folder.png" />
+        <img src="./images/home/content/introduction/icon-folder.png" alt="icon folder" />
         <div class="text-border">
           <div class="intro-text">
             <span>We are an international team of</span>
@@ -102,13 +104,13 @@
 
           <div class="mission-image">
             <div class="img-3">
-              <img src="./images/home/content/mission/img3.png" />
+              <img loading="lazy" src="./images/home/content/mission/img3.jpg" alt="mission img3" />
             </div>
             <div class="img-2">
-              <img src="./images/home/content/mission/img2.png" />
+              <img loading="lazy" src="./images/home/content/mission/img2.jpg" alt="mission img2" />
             </div>
             <div class="img-1">
-              <img src="./images/home/content/mission/img1.png" />
+              <img loading="lazy" src="./images/home/content/mission/img1.jpg" alt="mission img1" />
             </div>
           </div>
         </div>
@@ -116,7 +118,7 @@
 
       <section class="our-team">
         <div class="team-title">
-          <img src="./images/home/content/team/people-icon.png" />
+          <img src="./images/home/content/team/people-icon.png" alt="people icon" />
           <div class="title-border">
             <div class="title-text">
               <span> OUR TALENTED TEAM</span>
@@ -131,14 +133,16 @@
         <div class="team-presentation">
           <div class="container">
 
-            <button class="scroll-left"></button>
-            <button class="scroll-right"></button>
+            <button class="scroll-left" aria-label="scroll left"></button>
+            <button class="scroll-right" aria-label="scroll right"></button>
 
             <div class="carousel">
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Adrian Apetrei/Adrian-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Adrian Apetrei//Adrian-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Adrian Apetrei/Adrian-1.png"
+                    alt="Adrian photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Adrian Apetrei//Adrian-2.png"
+                    alt="Adrian photo 2" />
                 </div>
 
                 <div class="person-quote" title="It always seems impossible until it's done">
@@ -146,7 +150,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/dev.png" />
+                  <img src="../images/home/content/team/dev.png" alt="dev icon" />
                 </div>
 
                 <div class="person-details">
@@ -157,7 +161,7 @@
                     </div>
                     <div class="localisation">
                       <span>Bucharest</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -165,8 +169,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Shelley/Shelley-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Shelley/Shelley-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Shelley/Shelley-1.png"
+                    alt="Shelley photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Shelley/Shelley-2.png"
+                    alt="Shelley photo 2" />
                 </div>
 
                 <div class="person-quote" title="People ignore design that ignores people">
@@ -174,7 +180,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/cat.png" />
+                  <img src="../images/home/content/team/cat.png" alt="cat icon" />
                 </div>
 
                 <div class="person-details">
@@ -185,7 +191,7 @@
                     </div>
                     <div class="localisation">
                       <span>Florida</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -193,8 +199,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/David-Bocle/David-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/David-Bocle/David-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/David-Bocle/David-1.png"
+                    alt="David photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/David-Bocle/David-2.png"
+                    alt="David photo 2" />
                 </div>
 
                 <div class="person-quote quote-bg" title="You saw me, but you didn’t look at me">
@@ -202,7 +210,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/picto.png" />
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
                 </div>
 
                 <div class="person-details">
@@ -213,7 +221,7 @@
                     </div>
                     <div class="localisation">
                       <span>Paris</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -221,8 +229,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Adelina Chiripuci/Adelina-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Adelina Chiripuci/Adelina-2.png" />
+                  <img loading="lazy" class="first-photo"
+                    src="./images/home/content/team/Adelina Chiripuci/Adelina-1.png" alt="Adeline photo 1" />
+                  <img loading="lazy" class="second-photo"
+                    src="./images/home/content/team/Adelina Chiripuci/Adelina-2.png" alt="Adeline photo 2" />
                 </div>
 
                 <div class="person-quote"
@@ -231,7 +241,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/dev.png" />
+                  <img src="../images/home/content/team/dev.png" alt="dev icon" />
                 </div>
 
                 <div class="person-details">
@@ -242,7 +252,7 @@
                     </div>
                     <div class="localisation">
                       <span>Bucharest</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -251,8 +261,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Xinyi/xinyi-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Xinyi/xinyi-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Xinyi/xinyi-1.png"
+                    alt="Xinyi photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Xinyi/xinyi-2.png"
+                    alt="Xinyi photo 2" />
                 </div>
 
                 <div class="person-quote" title="Knowledge is infinite. 学无止境">
@@ -260,7 +272,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/cat.png" />
+                  <img src="../images/home/content/team/cat.png" alt="cat icon" />
                 </div>
 
                 <div class="person-details">
@@ -271,7 +283,7 @@
                     </div>
                     <div class="localisation">
                       <span>Paris</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -279,8 +291,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Daniel/daniel-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Daniel/daniel-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Daniel/daniel-1.png"
+                    alt="Daniel photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Daniel/daniel-2.png"
+                    alt="Daniel photo 2" />
                 </div>
 
                 <div class="person-quote" title="Design can fix anything">
@@ -288,7 +302,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/picto.png" />
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
                 </div>
 
                 <div class="person-details">
@@ -299,7 +313,7 @@
                     </div>
                     <div class="localisation">
                       <span>Texas</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -307,8 +321,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Dorsaf/DORSAF-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Dorsaf/DORSAF-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Dorsaf/DORSAF-1.png"
+                    alt="Dorsaf photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Dorsaf/DORSAF-2.png"
+                    alt="Dorsaf photo 2" />
                 </div>
 
                 <div class="person-quote quote-bg" title="If you want it, work for it">
@@ -316,7 +332,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/dev.png" />
+                  <img src="../images/home/content/team/dev.png" alt="dev icon" />
                 </div>
 
                 <div class="person-details">
@@ -327,7 +343,7 @@
                     </div>
                     <div class="localisation">
                       <span>Paris</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -335,8 +351,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Vikas/vikas-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Vikas/vikas-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Vikas/vikas-1.png"
+                    alt="Vikas photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Vikas/vikas-2.png"
+                    alt="Vikas photo 2" />
                 </div>
 
                 <div class="person-quote" title="live and let live">
@@ -344,7 +362,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/picto.png" />
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
                 </div>
 
                 <div class="person-details">
@@ -355,7 +373,7 @@
                     </div>
                     <div class="localisation">
                       <span>Bangalore</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -363,8 +381,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Raya/raya-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Raya/raya-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Raya/raya-1.png"
+                    alt="Raya photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Raya/raya-2.png"
+                    alt="Raya photo 2" />
                 </div>
 
                 <div class="person-quote" title="Don't limit the challenges, challenge the limits">
@@ -372,7 +392,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/cat.png" />
+                  <img src="../images/home/content/team/cat.png" alt="cat icon" />
                 </div>
 
                 <div class="person-details">
@@ -383,7 +403,7 @@
                     </div>
                     <div class="localisation">
                       <span>Paris</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -391,8 +411,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Chloe/chloe-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Chloe/chloe-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Chloe/chloe-1.png"
+                    alt="Chloe photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Chloe/chloe-2.png"
+                    alt="Chloe photo 2" />
                 </div>
 
                 <div class="person-quote" title="I’m not picky, I just know what I want">
@@ -400,7 +422,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/picto.png" />
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
                 </div>
 
                 <div class="person-details">
@@ -411,7 +433,7 @@
                     </div>
                     <div class="localisation">
                       <span>Mississauga</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -419,8 +441,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/David Martin/david-martin-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/David Martin/david-martin-2.png" />
+                  <img loading="lazy" class="first-photo"
+                    src="./images/home/content/team/David Martin/david-martin-1.png" alt="David photo 1" />
+                  <img loading="lazy" class="second-photo"
+                    src="./images/home/content/team/David Martin/david-martin-2.png" alt="David photo 2" />
                 </div>
 
                 <div class="person-quote quote-bg"
@@ -430,7 +454,7 @@
                 </div>
 
                 <div class=" person-icon">
-                  <img src="../images/home/content/team/dev.png" />
+                  <img src="../images/home/content/team/dev.png" alt="dev icon" />
                 </div>
 
                 <div class="person-details">
@@ -441,7 +465,7 @@
                     </div>
                     <div class="localisation">
                       <span>Florida</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -449,8 +473,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Biju/biju-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Biju/biju-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Biju/biju-1.png"
+                    alt="Biju photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Biju/biju-2.png"
+                    alt="Biju photo 12" />
                 </div>
 
                 <div class="person-quote" title="Art is subjective however, Design is objective">
@@ -458,7 +484,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/picto.png" />
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
                 </div>
 
                 <div class="person-details">
@@ -469,7 +495,7 @@
                     </div>
                     <div class="localisation">
                       <span>Bangalore</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -477,8 +503,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/narcisa-minca/narcisa-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/narcisa-minca/narcisa-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/narcisa-minca/narcisa-1.png"
+                    alt="Narcisa photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/narcisa-minca/narcisa-2.png"
+                    alt="Narcisa photo 2" />
                 </div>
 
                 <div class="person-quote" title="There is a defiance in being a dreamer">
@@ -486,7 +514,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/cat.png" />
+                  <img src="../images/home/content/team/cat.png" alt="cat icon" />
                 </div>
 
                 <div class="person-details">
@@ -497,7 +525,7 @@
                     </div>
                     <div class="localisation">
                       <span>Bucharest</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -505,8 +533,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Francine/Francine-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Francine/francine-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Francine/Francine-1.png"
+                    alt="Francine photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Francine/francine-2.png"
+                    alt="Francine photo 2" />
                 </div>
 
                 <div class="person-quote" title="When you focus on the good, the good gets better">
@@ -514,7 +544,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/picto.png" />
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
                 </div>
 
                 <div class="person-details">
@@ -525,7 +555,7 @@
                     </div>
                     <div class="localisation">
                       <span>Paris</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -533,8 +563,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Cristian/cristian-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Cristian/cristian-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Cristian/cristian-1.png"
+                    alt="Cristian photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Cristian/cristian-2.png"
+                    alt="Cristian photo 2" />
                 </div>
 
                 <div class="person-quote quote-bg" title="If you want the results, you gotta do the work">
@@ -542,7 +574,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/dev.png" />
+                  <img src="../images/home/content/team/dev.png" alt="dev icon" />
                 </div>
 
                 <div class="person-details">
@@ -553,7 +585,7 @@
                     </div>
                     <div class="localisation">
                       <span>Bucharest</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -561,8 +593,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Anantharama/Ananthan-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Anantharama/Ananthan-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Anantharama/Ananthan-1.png"
+                    alt="Anantharama photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Anantharama/Ananthan-2.png"
+                    alt="Anantharama photo 2" />
                 </div>
 
                 <div class="person-quote" title="You only fail when you stop trying">
@@ -570,7 +604,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/picto.png" />
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
                 </div>
 
                 <div class="person-details">
@@ -581,7 +615,7 @@
                     </div>
                     <div class="localisation">
                       <span>Trivandrum</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -589,8 +623,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Juliette/juliette-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Juliette/juliette-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Juliette/juliette-1.png"
+                    alt="Juliette photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Juliette/juliette-2.png"
+                    alt="Juliette photo 2" />
                 </div>
 
                 <div class="person-quote" title="Less is more">
@@ -598,7 +634,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/cat.png" />
+                  <img src="../images/home/content/team/cat.png" alt="cat icon" />
                 </div>
 
                 <div class="person-details">
@@ -609,7 +645,7 @@
                     </div>
                     <div class="localisation">
                       <span>Paris</span>
-                      <img class="first-photo" src="./images/home/content/team/pin.svg" />
+                      <img class="first-photo" src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -617,8 +653,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Antonella/Antonnela-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Antonella/Antonnela-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Antonella/Antonnela-1.png"
+                    alt="Antonella photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Antonella/Antonnela-2.png"
+                    alt="Antonella photo 2" />
                 </div>
 
                 <div class="person-quote" title="When the going gets tough, the tough get going">
@@ -626,7 +664,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/picto.png" />
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
                 </div>
 
                 <div class="person-details">
@@ -637,7 +675,7 @@
                     </div>
                     <div class="localisation">
                       <span>Bangalore</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -645,8 +683,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Kelby/kelby.png" />
-                  <img class="second-photo" src="./images/home/content/team/Kelby/kelby.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Kelby/kelby.png"
+                    alt="Kelby photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Kelby/kelby.png"
+                    alt="Kelby photo 2" />
                 </div>
 
                 <div class="person-quote quote-bg" title="Do good work for good people">
@@ -655,7 +695,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/dev.png" />
+                  <img src="../images/home/content/team/dev.png" alt="dev icon" />
                 </div>
 
                 <div class="person-details">
@@ -666,7 +706,7 @@
                     </div>
                     <div class="localisation">
                       <span>Texas</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -674,8 +714,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/octavian/octavian-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/octavian/octavian-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/octavian/octavian-1.png"
+                    alt="Octavian photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/octavian/octavian-2.png"
+                    alt="Octavian photo 2" />
                 </div>
 
                 <div class="person-quote"
@@ -684,7 +726,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/picto.png" />
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
                 </div>
 
                 <div class="person-details">
@@ -695,7 +737,7 @@
                     </div>
                     <div class="localisation">
                       <span>Bucharest</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -703,8 +745,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Julien/juju1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Julien/juju2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Julien/juju1.png"
+                    alt="Julien photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Julien/juju2.png"
+                    alt="Julien photo 2" />
                 </div>
 
                 <div class="person-quote" title="Chi va piano va sano e va lontano">
@@ -712,7 +756,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/cat.png" />
+                  <img src="../images/home/content/team/cat.png" alt="cat icon" />
                 </div>
 
                 <div class="person-details">
@@ -723,7 +767,7 @@
                     </div>
                     <div class="localisation">
                       <span>Paris</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
@@ -731,8 +775,10 @@
 
               <div class="item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Thomas/Thomas-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Thomas/Thomas-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Thomas/Thomas-1.png"
+                    alt="Thomas photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Thomas/Thomas-2.png"
+                    alt="Thomas photo 2" />
                 </div>
 
                 <div class="person-quote" title="Just do it">
@@ -740,7 +786,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/dev.png" />
+                  <img src="../images/home/content/team/dev.png" alt="dev icon" />
                 </div>
 
                 <div class="person-details">
@@ -751,16 +797,18 @@
                     </div>
                     <div class="localisation">
                       <span>Paris</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
-              </div>  
+              </div>
 
               <div class="item last-item">
                 <div class="person-photo">
-                  <img class="first-photo" src="./images/home/content/team/Heather/heather-1.png" />
-                  <img class="second-photo" src="./images/home/content/team/Heather/heather-2.png" />
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Heather/heather-1.png"
+                    alt="Heather photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Heather/heather-2.png"
+                    alt="Heather photo 2" />
                 </div>
 
                 <div class="person-quote quote-bg" title="Today is the youngest we'll ever be">
@@ -768,7 +816,7 @@
                 </div>
 
                 <div class="person-icon">
-                  <img src="../images/home/content/team/picto.png" />
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
                 </div>
 
                 <div class="person-details">
@@ -779,12 +827,12 @@
                     </div>
                     <div class="localisation">
                       <span>Kitchener</span>
-                      <img src="./images/home/content/team/pin.svg" />
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
                     </div>
                   </div>
                 </div>
               </div>
-              
+
             </div>
           </div>
         </div>
@@ -799,75 +847,81 @@
 
           <div class="article">
             <a href="https://medium.com/finastra-fintechs-devs/quick-peak-into-finastras-design-system-3504664228e7"
-              target="_blank">
+              target="_blank" rel="noopener">
               <div class="article-photo">
-                <img class="thumbnail" src="./images/home/content/articles/ds.png" />
+                <img loading="lazy" class="thumbnail" src="./images/home/content/articles/ds.png"
+                  alt="design system image" />
                 <div class="bg bg-1"></div>
               </div>
             </a>
             <div class="article-description">
 
               <div class="chip-list">
-                <a href="https://www.fusionfabric.cloud/" target="_blank">
+                <a href="https://www.fusionfabric.cloud/" target="_blank" rel="noopener">
                   <div class="chip">fusionfabric.cloud</div>
                 </a>
-                <a href="https://design.fusionfabric.cloud/" target="_blank">
+                <a href="https://design.fusionfabric.cloud/" target="_blank" rel="noopener">
                   <div class="chip chip-color">design system</div>
                 </a>
               </div>
               <a href="https://medium.com/finastra-fintechs-devs/quick-peak-into-finastras-design-system-3504664228e7"
-                target="_blank">
+                target="_blank" rel="noopener">
                 <span class="article-title">Quick peak into Finastra's design system</span><br>
-                <span class="article-text">Like every major player out there, Finastra has been creating its own Design System. If you’re part of a big company, you would have your own Design System as well.</span>
+                <span class="article-text">Like every major player out there, Finastra has been creating its own Design
+                  System. If you’re part of a big company, you would have your own Design System as well.</span>
               </a>
             </div>
           </div>
 
           <div class="article">
             <a href="https://medium.com/finastra-fintechs-devs/finastras-developer-portal-more-than-just-apis-ec9be2e7b0b8"
-              target="_blank">
+              target="_blank" rel="noopener">
               <div class="article-photo">
-                <img class="thumbnail" src="./images/home/content/articles/devportal.png" />
+                <img loading="lazy" class="thumbnail" src="./images/home/content/articles/devportal.png"
+                  alt="developer portal image" />
                 <div class="bg bg-2"></div>
               </div>
             </a>
             <div class="article-description">
 
               <div class="chip-list">
-                <a href="https://www.fusionfabric.cloud/" target="_blank">
+                <a href="https://www.fusionfabric.cloud/" target="_blank" rel="noopener">
                   <div class="chip">fusionfabric.cloud</div>
                 </a>
-                <a href="https://developer.fusionfabric.cloud/" target="_blank">
+                <a href="https://developer.fusionfabric.cloud/" target="_blank" rel="noopener">
                   <div class="chip chip-color">dev portal</div>
                 </a>
               </div>
               <a href="https://medium.com/finastra-fintechs-devs/finastras-developer-portal-more-than-just-apis-ec9be2e7b0b8"
-                target="_blank">
+                target="_blank" rel="noopener">
                 <span class="article-title">Finastra's developer portal : more than just APIs</span><br>
-                <span class="article-text">Finastra’s developer portal gives developers the power to use complex and specific financial functionalities to create applications.</span>
+                <span class="article-text">Finastra's developer portal gives developers the power to use complex and
+                  specific financial functionalities to create applications.</span>
               </a>
             </div>
           </div>
 
           <div class="article">
             <a href="https://www.linkedin.com/pulse/running-successful-remote-design-thinking-workshops-shelley-armstrong/"
-              target="_blank">
+              target="_blank" rel="noopener">
               <div class="article-photo">
-                <img class="thumbnail" src="./images/home/content/articles/linkedin.png" />
+                <img loading="lazy" class="thumbnail" src="./images/home/content/articles/linkedin.png"
+                  alt="design thinking image" />
                 <div class="bg bg-3"></div>
               </div>
             </a>
             <div class="article-description">
 
               <div class="chip-list">
-                <a href="https://design.fusionfabric.cloud/plan-ideate/overview">
+                <a href="https://design.fusionfabric.cloud/plan-ideate/overview" target="_blank" rel="noopener">
                   <div class="chip chip-color">design thinking</div>
                 </a>
               </div>
               <a href="https://www.linkedin.com/pulse/running-successful-remote-design-thinking-workshops-shelley-armstrong/"
-                target="_blank">
+                target="_blank" rel="noopener">
                 <span class="article-title">Running successful remote design thinking workshops</span><br>
-                <span class="article-text">The universe threw us a curveball in the form of a global pandemic - what’s a design leader to do?</span>
+                <span class="article-text">The universe threw us a curveball in the form of a global pandemic - what’s a
+                  design leader to do?</span>
               </a>
             </div>
           </div>
@@ -880,41 +934,46 @@
       <a href="mailto:UXG@finastra.com">
         <div class="contact">
           <span>Contact us</span>
-          <img src="./images/home/footer/msg.png">
+          <img loading="lazy" src="./images/home/footer/msg.png" alt="msg icon">
         </div>
       </a>
       <div class="footer-links">
         <div class="footer-name">Finastra.design</div>
         <ul class="footer-list">
-          <a href="https://www.finastra.com/terms-conditions">
-            <li> TERMS AND CONDITIONS </li>
+          <li>
+            <a href="https://www.finastra.com/terms-conditions">TERMS AND CONDITIONS</a>
+          </li>
           </a>
-          <a href="https://www.finastra.com/privacy-policy">
-            <li> PRIVACY POLICY </li>
+
+          <li>
+            <a href="https://www.finastra.com/privacy-policy"> PRIVACY POLICY </a>
+          </li>
           </a>
-          <a href="https://dh.wd3.myworkdayjobs.com/DHC/jobs">
-            <li> JOBS OFFERS </li>
+          <li>
+            <a href="https://dh.wd3.myworkdayjobs.com/DHC/jobs">
+              JOBS OFFERS
+          </li>
           </a>
         </ul>
       </div>
 
       <div class="socials-icons">
-        <a href="https://www.instagram.com/design.at.finastra/" target="_blank">
-          <img src="./images/home/footer/insta.svg">
+        <a href="https://www.instagram.com/design.at.finastra/" target="_blank" rel="noopener">
+          <img loading="lazy" src="./images/home/footer/insta.svg" alt="instagram icon">
         </a>
-        <a href="https://twitter.com/finastrafs" target="_blank">
-          <img src="./images/home/footer/twitter.svg">
+        <a href="https://twitter.com/finastrafs" target="_blank" rel="noopener">
+          <img loading="lazy" src="./images/home/footer/twitter.svg" alt="twitter icon">
         </a>
-        <a href="https://www.linkedin.com/company/finastra/mycompany/" target="_blank">
-          <img src="./images/home/footer/lkn.svg">
+        <a href="https://www.linkedin.com/company/finastra/mycompany/" target="_blank" rel="noopener">
+          <img loading="lazy" src="./images/home/footer/lkn.svg" alt="linkedin icon">
         </a>
-        <a href="https://www.youtube.com/channel/UCUV2CtQG9wSVtUICe8bTxPw" target="_blank">
-          <img src="./images/home/footer/youtube.svg">
+        <a href="https://www.youtube.com/channel/UCUV2CtQG9wSVtUICe8bTxPw" target="_blank" rel="noopener">
+          <img loading="lazy" src="./images/home/footer/youtube.svg" alt="youtube article">
         </a>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-  </body>
+</body>
 
 </html>
