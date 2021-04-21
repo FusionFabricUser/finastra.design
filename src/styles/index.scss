@@ -1,0 +1,52 @@
+@import 'home/header.scss';
+@import 'home/content/introduction.scss';
+@import 'home/content/mission.scss';
+@import 'home/content/our-team.scss';
+@import 'home/content/articles.scss';
+@import 'home/footer.scss';
+
+body {
+  margin: 0;
+  .wrapper {
+    position: relative;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+  }
+  /* style.css */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+  }
+
+  .skip-link:focus {
+    top: 0;
+  }
+}
+
+.content {
+  display: block;
+  --content-intro-font-size: clamp(1rem, 2vw, 2rem);
+  --content-intro-text-padding: 10px;
+  --content-intro-border-font-size: 3em;
+
+  --content-border-padding: 0.5em;
+  --content-border-background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+  --content-border-background-img: repeating-linear-gradient(
+    0deg,
+    var(--clr-border),
+    var(--clr-border) 10px,
+    transparent 0px,
+    transparent 17px
+  );
+  --clr-border: rgb(138, 135, 135);
+
+  --content-title-font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+  --content-mission-text-title-font-size: clamp(1.2rem, 1.7vw, 1.7rem);
+  --content-mission-text-content-font-size: clamp(1rem, 1.5vw, 1.5rem);
+}

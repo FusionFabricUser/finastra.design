@@ -30,6 +30,13 @@ module.exports = {
             ignore: ['*.DS_Store'],
           },
         },
+        {
+          from: paths.images,
+          to: 'images',
+          globOptions: {
+            ignore: ['*.DS_Store'],
+          },
+        },
       ],
     }),
 
@@ -37,8 +44,13 @@ module.exports = {
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     new HtmlWebpackPlugin({
       title: 'finastra.design',
+      favicon: paths.src + '/images/fav-icon.svg',
       template: paths.src + '/home-page.html', // template file
+      inject: 'body',
       filename: 'index.html', // output file
+      minify: {
+        collapseWhitespace: false
+      }
     }),
   ],
 

@@ -1,7 +1,983 @@
-<html>
-  <head>
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-  </body>
+<html lang="en">
+
+<head>
+  <meta name="description" content="We are an international team of designers and developers with the motivation to re-imagine the user experience of building financial services">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,500italic&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" >
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Finastra.Design" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/" />
+  <meta property="og:image" content="https://finastra.design/assets/images/thumbnail-finastra-design.png" />
+  <meta property="og:description"
+    content="We are an international team of designers and developers with the motivation to re-imagine the user experience of building financial services" />
+</head>
+
+<body>
+  <a class="skip-link" href="#maincontent">Skip to main</a>
+  <div class="wrapper" id="maincontent">
+    <header>
+      <div class="logo">
+        <img src="./images/home/header/Logo_finastra.design.png" alt="finastra.design logo" />
+      </div>
+
+      <div class="team-images">
+        <img loading="eager" class="img2" src="./images/home/header/img1.png" alt="header img1" />
+        <img loading="eager" class="img1" src="./images/home/header/img2.png" alt="header img2" />
+        <img loading="eager" class="img3" src="./images/home/header/img3.png" alt="header img3" />
+        <img loading="eager" class="crop-mark" src="./images/home/header/crop.svg" alt="header crop" />
+      </div>
+
+      <div class="title">
+        <div class="title-line">
+          <span>Let's</span>
+          <div class="title-animation">
+            <span class="title-emphasis">design</span>
+          </div>
+        </div>
+
+        <span class="title-line">the future
+          <span class="desktop">of finance</span>
+        </span>
+
+        <span class="mobile title-line">of finance</span>
+      </div>
+      <div class="link">
+        <img src="./images/home/header/link.png" alt="header link" />
+      </div>
+    </header>
+
+    <div class="content">
+      <section class="introduction">
+        <img src="./images/home/content/introduction/icon-folder.png" alt="icon folder" />
+        <div class="text-border">
+          <div class="intro-text">
+            <span>We are an international team of</span>
+            <span class="focus">designers </span>
+            and <span class="focus">developers</span>
+            <span>with the motivation to</span>
+            <span class="focus">re-imagine</span> the
+            <span class="focus">user experience</span> of building
+            <span class="focus">financial services</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mission">
+        <div class="mission-title">
+          <p>OUR MISSION</p>
+        </div>
+
+        <div class="mission-content">
+          <div class="mission-text">
+            <div class="mission-text-1">
+              <span class="mission-text-title-1">Stay inspired</span>
+              <span class="mission-text-content-1">Work and grow with talented, multi-disciplinary team members across
+                the globe
+              </span>
+            </div>
+
+            <div class="mission-text-2">
+              <span class="mission-text-title-2">Make an impact</span>
+              <span class="mission-text-content-2">Build platforms that accelerate the creation of financial
+                applications that people need
+              </span>
+            </div>
+
+            <div class="mission-text-3">
+              <span class="mission-text-title-3">Our north star</span>
+              <span class="mission-text-content-3">Democratize the creation of financial applications for everyone by
+                providing intuitive design system and Open APIs
+              </span>
+            </div>
+          </div>
+
+          <div class="mission-image">
+            <div class="img-3">
+              <img loading="eager" src="./images/home/content/mission/img3.jpg" alt="mission img3" />
+            </div>
+            <div class="img-2">
+              <img loading="eager" src="./images/home/content/mission/img2.jpg" alt="mission img2" />
+            </div>
+            <div class="img-1">
+              <img loading="eager" src="./images/home/content/mission/img1.jpg" alt="mission img1" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-team">
+        <div class="team-title">
+          <img src="./images/home/content/team/people-icon.png" alt="people icon" />
+          <div class="title-border">
+            <div class="title-text">
+              <span> OUR TALENTED TEAM</span>
+            </div>
+          </div>
+        </div>
+        <div class="team-sub-title">
+          Our team is based around the world and offers expertise from UX research, design, prototyping, content
+          strategy to full-stack development
+        </div>
+
+        <div class="team-presentation">
+          <div class="container">
+
+            <button class="scroll-left" aria-label="scroll left"></button>
+            <button class="scroll-right" aria-label="scroll right"></button>
+
+            <div class="carousel">
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo" src="./images/home/content/team/Adrian Apetrei/Adrian-1.png"
+                    alt="Adrian photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Adrian Apetrei//Adrian-2.png"
+                    alt="Adrian photo 2" />
+                </div>
+
+                <div class="person-quote" title="It always seems impossible until it's done">
+                  <span>It always seems impossible until it's done</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/dev.png" alt="dev icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Adrian</span><br />
+                      <span class="job">Software Engineer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Bucharest</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo" src="./images/home/content/team/Shelley/Shelley-1.png"
+                    alt="Shelley photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Shelley/Shelley-2.png"
+                    alt="Shelley photo 2" />
+                </div>
+
+                <div class="person-quote" title="People ignore design that ignores people">
+                  <span>People ignore design that ignores people.</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/cat.png" alt="cat icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Shelley</span><br />
+                      <span class="job">VP UX & Design</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Florida</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo" src="./images/home/content/team/David-Bocle/David-1.png"
+                    alt="David photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/David-Bocle/David-2.png"
+                    alt="David photo 2" />
+                </div>
+
+                <div class="person-quote quote-bg" title="You saw me, but you didn’t look at me">
+                  <span>You saw me, but you didn’t look at me</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">David</span><br />
+                      <span class="job">Senior Manager</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Paris</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo"
+                    src="./images/home/content/team/Adelina Chiripuci/Adelina-1.png" alt="Adeline photo 1" />
+                  <img loading="lazy" class="second-photo"
+                    src="./images/home/content/team/Adelina Chiripuci/Adelina-2.png" alt="Adeline photo 2" />
+                </div>
+
+                <div class="person-quote"
+                  title="When life shuts a door..open it again. It's a door, that's how they work.">
+                  <span>When life shuts a door..open it again. It's a door, that's how they work</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/dev.png" alt="dev icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Adelina </span><br />
+                      <span class="job">Software Engineer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Bucharest</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo" src="./images/home/content/team/Xinyi/xinyi-1.png"
+                    alt="Xinyi photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Xinyi/xinyi-2.png"
+                    alt="Xinyi photo 2" />
+                </div>
+
+                <div class="person-quote" title="Knowledge is infinite. 学无止境">
+                  <span>Knowledge is infinite. 学无止境</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/cat.png" alt="cat icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Xinyi</span><br />
+                      <span class="job">UI/UX developer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Paris</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo" src="./images/home/content/team/Daniel/daniel-1.png"
+                    alt="Daniel photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Daniel/daniel-2.png"
+                    alt="Daniel photo 2" />
+                </div>
+
+                <div class="person-quote" title="Design can fix anything">
+                  <span>Design can fix anything</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Daniel</span><br />
+                      <span class="job">UX Designer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Texas</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo" src="./images/home/content/team/Dorsaf/DORSAF-1.png"
+                    alt="Dorsaf photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Dorsaf/DORSAF-2.png"
+                    alt="Dorsaf photo 2" />
+                </div>
+
+                <div class="person-quote quote-bg" title="If you want it, work for it">
+                  <span>If you want it, work for it</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/dev.png" alt="dev icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Dorsaf</span><br />
+                      <span class="job">Software Engineer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Paris</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo" src="./images/home/content/team/Vikas/vikas-1.png"
+                    alt="Vikas photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Vikas/vikas-2.png"
+                    alt="Vikas photo 2" />
+                </div>
+
+                <div class="person-quote" title="live and let live">
+                  <span>Live and let live</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Vikas</span><br />
+                      <span class="job">Principal UX Designer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Bangalore</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo" src="./images/home/content/team/Raya/raya-1.png"
+                    alt="Raya photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Raya/raya-2.png"
+                    alt="Raya photo 2" />
+                </div>
+
+                <div class="person-quote" title="Don't limit the challenges, challenge the limits">
+                  <span>Don't limit the challenges, challenge the limits</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/cat.png" alt="cat icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Raya</span><br />
+                      <span class="job">Senior Design Leader</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Paris</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo" src="./images/home/content/team/Chloe/chloe-1.png"
+                    alt="Chloe photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Chloe/chloe-2.png"
+                    alt="Chloe photo 2" />
+                </div>
+
+                <div class="person-quote" title="I’m not picky, I just know what I want">
+                  <span>I’m not picky, I just know what I want</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Chloe</span><br />
+                      <span class="job">Senior UX Designer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Mississauga</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo"
+                    src="./images/home/content/team/David Martin/david-martin-1.png" alt="David photo 1" />
+                  <img loading="lazy" class="second-photo"
+                    src="./images/home/content/team/David Martin/david-martin-2.png" alt="David photo 2" />
+                </div>
+
+                <div class="person-quote quote-bg"
+                  title="Just because you can, doesn't necessarily mean you should...& just because you can't doesn't mean you shouldn't try.">
+                  <span>Just because you can, doesn't necessarily mean you should...& just because you can't doesn't
+                    mean you shouldn't try</span>
+                </div>
+
+                <div class=" person-icon">
+                  <img src="../images/home/content/team/dev.png" alt="dev icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">David.M</span><br />
+                      <span class="job">Service Design Director</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Florida</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo" src="./images/home/content/team/Biju/biju-1.png"
+                    alt="Biju photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Biju/biju-2.png"
+                    alt="Biju photo 12" />
+                </div>
+
+                <div class="person-quote" title="Art is subjective however, Design is objective">
+                  <span>Art is subjective however, Design is objective</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Biju</span><br />
+                      <span class="job">Lead UX Designer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Bangalore</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo" src="./images/home/content/team/narcisa-minca/narcisa-1.png"
+                    alt="Narcisa photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/narcisa-minca/narcisa-2.png"
+                    alt="Narcisa photo 2" />
+                </div>
+
+                <div class="person-quote" title="There is a defiance in being a dreamer">
+                  <span>There is a defiance in being a dreamer</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/cat.png" alt="cat icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Narcisa</span><br />
+                      <span class="job">Software Engineer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Bucharest</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo" src="./images/home/content/team/Francine/Francine-1.png"
+                    alt="Francine photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Francine/francine-2.png"
+                    alt="Francine photo 2" />
+                </div>
+
+                <div class="person-quote" title="When you focus on the good, the good gets better">
+                  <span>When you focus on the good, the good gets better</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Francine</span><br />
+                      <span class="job">Software Engineer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Paris</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="eager" class="first-photo" src="./images/home/content/team/Cristian/cristian-1.png"
+                    alt="Cristian photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Cristian/cristian-2.png"
+                    alt="Cristian photo 2" />
+                </div>
+
+                <div class="person-quote quote-bg" title="If you want the results, you gotta do the work">
+                  <span>If you want the results, you gotta do the work</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/dev.png" alt="dev icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Cristian</span><br />
+                      <span class="job">Software Engineer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Bucharest</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Anantharama/Ananthan-1.png"
+                    alt="Anantharama photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Anantharama/Ananthan-2.png"
+                    alt="Anantharama photo 2" />
+                </div>
+
+                <div class="person-quote" title="You only fail when you stop trying">
+                  <span>You only fail when you stop trying</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Anantharama</span><br />
+                      <span class="job">Sr. Software Engineer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Trivandrum</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Juliette/juliette-1.png"
+                    alt="Juliette photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Juliette/juliette-2.png"
+                    alt="Juliette photo 2" />
+                </div>
+
+                <div class="person-quote" title="Less is more">
+                  <span>Less is more</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/cat.png" alt="cat icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Juliette</span><br />
+                      <span class="job">UI/UX Designer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Paris</span>
+                      <img class="first-photo" src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Antonella/Antonnela-1.png"
+                    alt="Antonella photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Antonella/Antonnela-2.png"
+                    alt="Antonella photo 2" />
+                </div>
+
+                <div class="person-quote" title="When the going gets tough, the tough get going">
+                  <span>When the going gets tough, the tough get going</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Antonella</span><br />
+                      <span class="job">UX Designer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Bangalore</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Kelby/kelby.png"
+                    alt="Kelby photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Kelby/kelby.png"
+                    alt="Kelby photo 2" />
+                </div>
+
+                <div class="person-quote quote-bg" title="Do good work for good people">
+                  <span>Do good work for good people</span>
+
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/dev.png" alt="dev icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Kelby</span><br />
+                      <span class="job">UX Designer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Texas</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/octavian/octavian-1.png"
+                    alt="Octavian photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/octavian/octavian-2.png"
+                    alt="Octavian photo 2" />
+                </div>
+
+                <div class="person-quote"
+                  title=" The greatest glory in living lies not in never falling,but in rising every time we fall">
+                  <span>The greatest glory in living lies not in never falling,but in rising every time we fall</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Octavian </span><br />
+                      <span class="job">Software Engineer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Bucharest</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Julien/juju1.png"
+                    alt="Julien photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Julien/juju2.png"
+                    alt="Julien photo 2" />
+                </div>
+
+                <div class="person-quote" title="Chi va piano va sano e va lontano">
+                  <span>Chi va piano va sano e va lontano...</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/cat.png" alt="cat icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Julien</span><br />
+                      <span class="job">Expert UX Developer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Paris</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="person-photo">
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Thomas/Thomas-1.png"
+                    alt="Thomas photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Thomas/Thomas-2.png"
+                    alt="Thomas photo 2" />
+                </div>
+
+                <div class="person-quote" title="Just do it">
+                  <span>Just do it</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/dev.png" alt="dev icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Thomas</span><br />
+                      <span class="job">Expert UI/UX developer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Paris</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item last-item">
+                <div class="person-photo">
+                  <img loading="lazy" class="first-photo" src="./images/home/content/team/Heather/heather-1.png"
+                    alt="Heather photo 1" />
+                  <img loading="lazy" class="second-photo" src="./images/home/content/team/Heather/heather-2.png"
+                    alt="Heather photo 2" />
+                </div>
+
+                <div class="person-quote quote-bg" title="Today is the youngest we'll ever be">
+                  <span>Baking the world a better place</span>
+                </div>
+
+                <div class="person-icon">
+                  <img src="../images/home/content/team/picto.png" alt="phone icon" />
+                </div>
+
+                <div class="person-details">
+                  <div class="person-title">
+                    <div class="description">
+                      <span class="name">Heather</span><br />
+                      <span class="job">Senior UX Designer</span>
+                    </div>
+                    <div class="localisation">
+                      <span>Kitchener</span>
+                      <img src="./images/home/content/team/pin.svg" alt="localisation icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="articles">
+        <div class="articles-title">
+          <p>LATEST ARTICLES</p>
+        </div>
+
+        <div class="article-list">
+
+          <div class="article">
+            <a href="https://medium.com/finastra-fintechs-devs/quick-peak-into-finastras-design-system-3504664228e7"
+              target="_blank" rel="noopener">
+              <div class="article-photo">
+                <img loading="eager" class="thumbnail" src="./images/home/content/articles/ds.png"
+                  alt="design system image" />
+                <div class="bg bg-1"></div>
+              </div>
+            </a>
+            <div class="article-description">
+
+              <div class="chip-list">
+                <a href="https://www.fusionfabric.cloud/" target="_blank" rel="noopener">
+                  <div class="chip">fusionfabric.cloud</div>
+                </a>
+                <a href="https://design.fusionfabric.cloud/" target="_blank" rel="noopener">
+                  <div class="chip chip-color">design system</div>
+                </a>
+              </div>
+              <a href="https://medium.com/finastra-fintechs-devs/quick-peak-into-finastras-design-system-3504664228e7"
+                target="_blank" rel="noopener">
+                <span class="article-title">Quick peak into Finastra's design system</span><br>
+                <span class="article-text">Like every major player out there, Finastra has been creating its own Design
+                  System. If you’re part of a big company, you would have your own Design System as well.</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="article">
+            <a href="https://medium.com/finastra-fintechs-devs/finastras-developer-portal-more-than-just-apis-ec9be2e7b0b8"
+              target="_blank" rel="noopener">
+              <div class="article-photo">
+                <img loading="eager" class="thumbnail" src="./images/home/content/articles/devportal.png"
+                  alt="developer portal image" />
+                <div class="bg bg-2"></div>
+              </div>
+            </a>
+            <div class="article-description">
+
+              <div class="chip-list">
+                <a href="https://www.fusionfabric.cloud/" target="_blank" rel="noopener">
+                  <div class="chip">fusionfabric.cloud</div>
+                </a>
+                <a href="https://developer.fusionfabric.cloud/" target="_blank" rel="noopener">
+                  <div class="chip chip-color">dev portal</div>
+                </a>
+              </div>
+              <a href="https://medium.com/finastra-fintechs-devs/finastras-developer-portal-more-than-just-apis-ec9be2e7b0b8"
+                target="_blank" rel="noopener">
+                <span class="article-title">Finastra's developer portal : more than just APIs</span><br>
+                <span class="article-text">Finastra's developer portal gives developers the power to use complex and
+                  specific financial functionalities to create applications.</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="article">
+            <a href="https://www.linkedin.com/pulse/running-successful-remote-design-thinking-workshops-shelley-armstrong/"
+              target="_blank" rel="noopener">
+              <div class="article-photo">
+                <img loading="eager" class="thumbnail" src="./images/home/content/articles/linkedin.png"
+                  alt="design thinking image" />
+                <div class="bg bg-3"></div>
+              </div>
+            </a>
+            <div class="article-description">
+
+              <div class="chip-list">
+                <a href="https://design.fusionfabric.cloud/plan-ideate/overview" target="_blank" rel="noopener">
+                  <div class="chip chip-color">design thinking</div>
+                </a>
+              </div>
+              <a href="https://www.linkedin.com/pulse/running-successful-remote-design-thinking-workshops-shelley-armstrong/"
+                target="_blank" rel="noopener">
+                <span class="article-title">Running successful remote design thinking workshops</span><br>
+                <span class="article-text">The universe threw us a curveball in the form of a global pandemic - what’s a
+                  design leader to do?</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer-title">WANT TO KNOW MORE ABOUT US ?</div>
+      <a href="mailto:UXG@finastra.com">
+        <div class="contact">
+          <span>Contact us</span>
+          <img loading="lazy" src="./images/home/footer/msg.png" alt="msg icon">
+        </div>
+      </a>
+      <div class="footer-links">
+        <div class='finastra-logo'>
+          <a  href='https://www.finastra.com/'' target="_blank" rel="noopener">
+          <img loading="eager" src="./images/home/footer/finastra.png" alt="finastra logo" />
+          </a>
+        </div>
+        <div class="footer-name">Finastra.design</div>
+        <ul class="footer-list">
+          <li>
+            <a href="https://www.finastra.com/terms-conditions">TERMS AND CONDITIONS</a>
+          </li>
+          </a>
+
+          <li>
+            <a href="https://www.finastra.com/privacy-policy"> PRIVACY POLICY </a>
+          </li>
+          </a>
+          <li>
+            <a href="https://dh.wd3.myworkdayjobs.com/DHC/jobs">
+              JOBS OFFERS
+          </li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="socials-icons">
+        <a href="https://www.instagram.com/design.at.finastra/" target="_blank" rel="noopener">
+          <img loading="lazy" src="./images/home/footer/insta.svg" alt="instagram icon">
+        </a>
+        <a href="https://twitter.com/finastrafs" target="_blank" rel="noopener">
+          <img loading="lazy" src="./images/home/footer/twitter.svg" alt="twitter icon">
+        </a>
+        <a href="https://www.linkedin.com/company/finastra/mycompany/" target="_blank" rel="noopener">
+          <img loading="lazy" src="./images/home/footer/lkn.svg" alt="linkedin icon">
+        </a>
+        <a href="https://www.youtube.com/channel/UCUV2CtQG9wSVtUICe8bTxPw" target="_blank" rel="noopener">
+          <img loading="lazy" src="./images/home/footer/youtube.svg" alt="youtube article">
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+</body>
+
 </html>
+
