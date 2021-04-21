@@ -24,13 +24,6 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: paths.public,
-          to: 'assets',
-          globOptions: {
-            ignore: ['*.DS_Store'],
-          },
-        },
-        {
           from: paths.images,
           to: 'images',
           globOptions: {
@@ -75,7 +68,7 @@ module.exports = {
       {test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource'},
 
       // Fonts and SVGs: Inline files
-      {test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline'},
+      {test: /\.(woff(2)?|eot|ttf|otf|svg|png)$/, type: 'asset/inline'},
     ],
   },
 }
