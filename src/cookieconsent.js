@@ -10,7 +10,7 @@ cc.init = function init() {
         "text": "#414141"
       },
       "button": {
-        "background": "#694ED6"
+        "background": "#D818A5"
       }
     },
     "content": {
