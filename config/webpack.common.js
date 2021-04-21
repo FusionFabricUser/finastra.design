@@ -26,6 +26,7 @@ module.exports = {
         {
           from: paths.images,
           to: 'images',
+          force: true,
           globOptions: {
             ignore: ['*.DS_Store'],
           },
