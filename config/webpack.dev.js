@@ -20,9 +20,6 @@ module.exports = merge(common, {
     compress: true,
     hot: true,
     port: 8080,
-    headers: {
-      'Cache-Control': 'max-age=31536000',
-    },
   },
 
   plugins: [
