@@ -161,11 +161,7 @@
             overflow: hidden;
           }
         }
-
-        .quote-bg {
-          background-color: #36d4f2;
-        }
-
+        
         .person-details {
           margin-top: 32px;
           color: white;
@@ -269,6 +265,9 @@
         .person-photo {
           background: transparent
             linear-gradient(180deg, #f5c542 0%, #fafa32 100%) 0% 0%;
+        }
+        .person-quote {
+          background-color: #36d4f2;
         }
       }
       .item:nth-child(4n-4) {
